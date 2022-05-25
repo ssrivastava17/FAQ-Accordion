@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    margin:0;
+    align-items: center;
+}
+
+.app{
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    width: 50%;
+    min-width: 750px;
+    border-radius: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.leftSide{
+    width: 50%;
+    background-image: url(bg-pattern-desktop.svg);
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    background-position: -380px -200px;
+    background-attachment: fixed;
+    /* overflow: hidden; */
+}
+.leftSide .wrapper{
+    height:406px;
+    width: 337px;
+    overflow: hidden;
+    position: relative;
+}
+
+.leftSide img{
+    position: absolute;
+    width: 400px;  
+    /* height: 304px;  */
+    top: 60px;
+    left: -80px;
+}
+
+.leftSide .atSymbol{
+    position: absolute;
+    width: 150px;
+    top: 175px;
+    left: -74px;
+}
+
+.rightSide{
+    width: 50%;
+    margin: 5%;
+}
+
+h1{
+    margin-bottom: 40px;
+
+}
+.question{
+    font-weight: 700;
+    color: hsl(240, 6%, 50%);
+    position: relative;
+    display: block;
+    font-size: 14px;
+}
+
+.questionSelected{
+    font-weight: 700;
+    color: hsl(237, 12%, 33%);
+    position: relative;
+    display: block;
+    font-size: 14px;   
+}
+
+.question::after{
+    content: url(/icon-arrow-down.svg);
+    position: absolute;
+    right: 45px; 
+}
+
+.questionSelected::after{
+    content: url(/icon-arrow-down.svg);
+    position: absolute;
+    right: 45px; 
+    transform: rotate(180deg);
+}
+
+.answer{
+
+    display: none;
+}
+
+.answerReveal{
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+    width: 85%;
+    font-size: 12px;
+}
+
+hr.solid {
+    border-top: 1px solid rgba(231,231,233,.25);
+    /* padding: 0 5px; */
+    width: 92%;
+    margin-left: 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
